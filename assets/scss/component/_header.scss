@@ -1,0 +1,158 @@
+header.primary{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    nav.main-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        .nav-brand{
+            flex: 1 1 130px;
+            width: 130px;
+            max-width: 130px;
+            a{
+                display: block;
+                img{
+                    object-fit: contain;
+                    max-width: 122px;
+                    display: block;
+                }
+            }
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1 1 100%;
+            width: 100%;
+            max-width: 100%;
+
+            .navbar-left, .navbar-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                 li{
+                     a:not(.btn){
+                         display: block;
+                         font-size: 15px;
+                         line-height: calc(15px * 1.25);
+                         color: #fff;
+                         padding: 5px;
+                         &:hover{
+                             color: $primary-color;
+                         }
+                     }
+                     &:not(:last-child){
+                         margin-right: 20px;
+                     }
+                 }
+            }
+            .navbar-right{
+                justify-content: flex-end;
+                margin-left: auto;
+                margin-right: 0;
+                li{
+                    &:not(:last-child){
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    header.primary{
+        nav.main-navbar{
+            .mobile-menu{
+                display: none;
+            }
+            .navbar{
+                .navbar-left{
+
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:991.98px) {
+    header.primary{
+        nav.main-navbar{
+            position: relative;
+            padding-right: 60px;
+            .mobile-menu{
+                position: absolute;
+                right: 0;
+                top: 20px;
+                display: block;
+                .slicknav_menu{
+                    padding: 0;
+                    background-color: transparent;
+                    .slicknav_btn{
+                    margin: 0;
+                    padding: 13px;
+                    background-color: $btn-secondary-normal;
+                    text-shadow: none;
+                    }
+                    .slicknav_nav{
+                        background-color: $secondary-color;
+                        margin-top: 50px;
+                        min-width: 152px;
+                        @include border-radius(5px);
+                        overflow: hidden;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        li{
+                            
+                            a{
+                                padding: 5px;
+                                font-size: 16px;
+                                font-weight: $font-semibold;
+                                line-height: calc(16px * 1.25);
+                                text-align: center;
+                                @include animate(all 0.4s ease);
+                                &:hover, &:focus{
+                                    background-color: $secondary-color-light;
+                                    color: $secondary-color-hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar{
+                .navbar-left{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:465px) {
+    header.primary{
+        nav.main-navbar{
+
+            .navbar{
+                .navbar-right{
+                    li{
+                        &:not(:last-child){
+                            margin-right: 0;
+                        }
+                        &:first-child, &:last-child{
+                            display: none;
+                        }
+                    }  
+                }
+            }
+
+        }
+    }
+}

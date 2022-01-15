@@ -1,0 +1,103 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    @include border-radius(2px);
+    line-height: calc(15px * 1.25);
+    border:1px solid transparent;
+    background-color: #fff;
+    color: $primary-color;
+    font-weight: $font-bold;
+    @include animate(all 0.4s ease);
+    padding: 10px 20px;
+
+    &.btn-primary{
+        background-color: $btn-primary-normal;
+        border-color: $btn-primary-normal;
+        color: $btn-primary-default-text-color;
+        &:hover, &:focus{
+            background-color: $btn-primary-hover;
+            border-color: $btn-primary-hover; 
+            color: $btn-primary-hover-text-color;
+        }
+        &:disabled, &.disabled{
+            background-color:$btn-primary-disabled;
+            border-color:$btn-primary-disabled; 
+            color: $btn-primary-disabled-hover-text-color;
+        }
+    }
+    &.btn-secondary{
+        background-color: $btn-secondary-normal;
+        border-color: $btn-secondary-normal;
+        color: $btn-secondary-default-text-color;
+        &:hover, &:focus{
+            background-color: $btn-secondary-hover;
+            border-color: $btn-secondary-hover; 
+            color: $btn-secondary-hover-text-color;
+        }
+        &:disabled, &.disabled{
+            background-color:$btn-secondary-disabled;
+            border-color:$btn-secondary-disabled; 
+            color: $btn-secondary-disabled-hover-text-color;
+        }
+    }
+    &.btn-light{
+        background-color: $btn-light-normal;
+        border-color: $btn-light-normal;
+        color: $btn-light-default-text-color;
+        &:hover, &:focus{
+            background-color: $btn-light-hover;
+            border-color: $btn-light-hover; 
+            color: $btn-light-hover-text-color;
+        }
+        &:disabled, &.disabled{
+            background-color:$btn-light-disabled;
+            border-color:$btn-light-disabled; 
+            color: $btn-light-disabled-hover-text-color;
+        }
+    }
+    &.btn-outline-primary{
+        background-color: transparent;
+        border-color: $btn-primary-normal;
+        color: $btn-primary-normal;
+        &:hover, &:focus{
+            background-color: $btn-primary-normal;
+            border-color: $btn-primary-normal; 
+            color: $btn-primary-hover-text-color;
+        }
+        &:disabled, &.disabled{
+            background-color:$btn-primary-disabled;
+            border-color:$btn-primary-disabled; 
+            color: $btn-primary-disabled-hover-text-color;
+        }
+    }
+    &.btn-outline-secondary{
+        background-color: transparent;
+        border-color: $btn-secondary-normal;
+        color: $btn-secondary-normal;
+        &:hover, &:focus{
+            background-color: $btn-secondary-normal;
+            border-color: $btn-secondary-normal; 
+            color: $btn-secondary-hover-text-color;
+        }
+        &:disabled, &.disabled{
+            background-color:$btn-secondary-disabled;
+            border-color:$btn-secondary-disabled; 
+            color: $btn-secondary-disabled-hover-text-color;
+        }
+    }
+    &.btn-lg{
+        padding: 15px 35px;
+        font-size: 18px;
+        @include border-radius(4px);
+    }
+    &.btn-sm{
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    &.btn-block{
+        display: flex;
+        width: 100%;
+    }
+}

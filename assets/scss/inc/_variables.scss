@@ -1,0 +1,58 @@
+// paths
+
+$img-path: "../img/" !default;
+$font-path:"../fonts/" !default;
+
+// typography
+
+$main-font: 'HK Grotesk', sans-serif !default;
+$font-light:300 !default;
+$font-regular:400 !default;
+$font-medium:500 !default;
+$font-semibold:600 !default;
+$font-bold:700 !default;
+$font-extrabold:800 !default;
+$font-black:900 !default;
+
+// color themes
+
+$primary-color:#2783F3;
+$primary-color-hover:#1b5caa;
+$primary-color-light:#bedafb;
+$secondary-color:#00BA74;
+$secondary-color-hover:#007046;
+$secondary-color-light:#B1FBE3;
+$text-color:#202324;
+$text-color-light:#545C5F;
+$text-color-muted:#939C9F;
+$color-header-color-1:#DE742D;
+$color-header-color-2:#A07EDC;
+$qty-bg:#EDF1F2;
+$arrow-bg:#F4F6F6;
+$rating-color:#FFD200;
+
+// Button Colors
+
+/* Primary button */
+$btn-primary-normal:#2783F3;
+$btn-primary-hover:#1b5caa;
+$btn-primary-disabled:#bedafb;
+$btn-primary-default-text-color:#fff;
+$btn-primary-hover-text-color:#fff;
+$btn-primary-disabled-hover-text-color:#2783F3;
+
+/* Secondary button */
+$btn-secondary-normal:#00BA74;
+$btn-secondary-hover:#007046;
+$btn-secondary-disabled:#B1FBE3;
+$btn-secondary-default-text-color:#fff;
+$btn-secondary-hover-text-color:#fff;
+$btn-secondary-disabled-hover-text-color:#00BA74;
+
+/* Light button */
+$btn-light-normal:#fff;
+$btn-light-hover:#2783F3;
+$btn-light-disabled:#f1f1f1;
+$btn-light-default-text-color:#2783F3;
+$btn-light-hover-text-color:#fff;
+$btn-light-disabled-hover-text-color:#bedafb;

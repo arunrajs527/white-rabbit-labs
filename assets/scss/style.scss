@@ -1,0 +1,48 @@
+/**
+*
+* Bootstrap
+* Variables
+* Mixins
+* Base 
+* Typography styles
+* Button
+* Sliders and Carousel
+* Header
+* Navigation
+* Footer
+* Common
+* Landing
+*
+**/
+/* plugins css import start*/
+/*  Bootstrap Grid css  */
+@import '../plugins/bootstrap-4.6.1/css/bootstrap-grid.css';
+/*  Responsive Nav css  */
+@import '../plugins/slicknav-1.0.10/dist/slicknav.css';
+/*  Product Gallery css  */
+@import '../plugins/fotorama-4.6.4/fotorama.css';
+/* plugins css import end*/
+/* common */
+/*  Theme Variables*/
+@import './inc/variables';
+/*  Theme Mixins used*/
+@import './inc/mixins';
+/*  Reset styles */
+@import './inc/reset';
+/*  Fonts Family */
+@import './inc/fonts';
+/*  Base styles */
+@import './inc/base';
+/*  Typography styles */
+@import './inc/typography';
+/*  Button styles */
+@import './component/buttons';
+/*  Header css  */
+@import './component/header';
+/*  Each Sections Common css  */
+/* pages */
+/*  Common us css  */
+@import './pages/common';
+/*  Landing css  */
+@import './pages/landing';
+/* end of the style document */
