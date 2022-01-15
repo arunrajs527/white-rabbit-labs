@@ -61,6 +61,24 @@ header.primary{
                     &:not(:last-child){
                         margin-right: 16px;
                     }
+                    a{
+                        .right-arrow{
+                            flex: 1 1 15px;
+                            width: 15px;
+                            max-width: 15px;
+                            background: transparent url('#{$img-path}signin_arrow.svg') top right no-repeat;
+                            height: 15px;
+                            margin-left: 10px;
+                            @include animate(all 0.4s ease);
+                            background-size: auto 15px;
+                        }
+                        &:hover, &:focus{
+                            .right-arrow{
+                                background-position: top left;
+                            }
+
+                        }
+                    }
                 }
             }
         }
@@ -72,11 +90,6 @@ header.primary{
         nav.main-navbar{
             .mobile-menu{
                 display: none;
-            }
-            .navbar{
-                .navbar-left{
-
-                }
             }
         }
     }

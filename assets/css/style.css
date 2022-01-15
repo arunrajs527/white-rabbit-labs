@@ -1082,6 +1082,21 @@ header.primary {
         margin-right: 0; }
         header.primary nav.main-navbar .navbar .navbar-right li:not(:last-child) {
           margin-right: 16px; }
+        header.primary nav.main-navbar .navbar .navbar-right li a .right-arrow {
+          flex: 1 1 15px;
+          width: 15px;
+          max-width: 15px;
+          background: transparent url("../img/signin_arrow.svg") top right no-repeat;
+          height: 15px;
+          margin-left: 10px;
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          -ms-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          background-size: auto 15px; }
+        header.primary nav.main-navbar .navbar .navbar-right li a:hover .right-arrow, header.primary nav.main-navbar .navbar .navbar-right li a:focus .right-arrow {
+          background-position: top left; }
 
 @media screen and (min-width: 992px) {
   header.primary nav.main-navbar .mobile-menu {
